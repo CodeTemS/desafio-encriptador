@@ -24,12 +24,40 @@ main{
     "contenedor contenedor aside"
     "contenedor contenedor aside";
 }
+h1{
+    color: #154682;
+}
 .contenedor{
     grid-area: contenedor;
     display: flex;
+    gap: 20px;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+}
+#texto{
+    width: 700px;
+    height: 500px;
+    background-color: #e4e7eb;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    font-size: 3em;
+    color: #154682;
+}
+.button{
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #154682;
+    color: #f1f1f1;
+}
+.btn_desc{
+    padding: 15px 30px;
+    border-radius: 15px;
+    border: 2px solid #154682;
+    color: #154682;
+    background-color: transparent;
 }
 
 /*Estilos de aside*/
@@ -37,10 +65,21 @@ aside{
     grid-area: aside;
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
     gap: 10px;
+    padding: 20px;
 }
-#txt_desc{
-    display: none;
+#text_desc{
+    background-color: #e4e7eb;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    font-size: 3em;
+    color: #154682;
+}
+.active{
+    display: block;
 }
 
 @media screen and (max-width: 480px){
