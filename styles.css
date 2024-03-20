@@ -16,7 +16,7 @@ header{
     border-radius: 10px;
 }
 /*Estilos del main*/
-main{
+.main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
@@ -78,14 +78,17 @@ aside{
     font-size: 3em;
     color: #154682;
 }
+.inactive{
+    display: none;
+}
 .active{
     display: block;
 }
 
-@media screen and (max-width: 480px){
-    main{
+@media screen and (max-width: 980px){
+    .main{
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
     }
 }
 
